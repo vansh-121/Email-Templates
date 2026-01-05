@@ -9,6 +9,7 @@
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
     <title>KYC Document Submitted - Valura</title>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
@@ -179,7 +180,7 @@
                                                     <td style="padding-bottom: 16px;">
                                                         <p
                                                             style="margin: 0 0 8px 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 18px; line-height: 24px; font-weight: 600;">
-                                                            Hi Apeksha,
+                                                            Hi ${displayName},
                                                         </p>
                                                         <p
                                                             style="margin: 0 0 8px 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 14px; line-height: 20px; font-weight: 400;">
@@ -233,11 +234,12 @@
                                                                                         compliance.</li>
                                                                                     <li style="margin-bottom: 4px;">
                                                                                         We'll contact you at
-                                                                                        *apeksha@email.com* for further
+                                                                                        ${emailAddress} for further
                                                                                         requirements (if any).</li>
                                                                                     <li style="margin-bottom: 0;">You
                                                                                         can expect an update from us
-                                                                                        within [XX] business hours.</li>
+                                                                                        within ${expectedHours} business
+                                                                                        hours.</li>
                                                                                 </ul>
                                                                             </td>
                                                                         </tr>
@@ -268,9 +270,11 @@
                                             <![endif]-->
 
                                             <!-- Row 1 -->
-                                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 8px;">
+                                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
+                                                style="margin-bottom: 8px;">
                                                 <tr>
-                                                    <th class="sm-stack-col" width="267" style="width: 267px; min-width: 267px; max-width: 267px; font-weight: normal; text-align: left; vertical-align: top; padding: 0;">
+                                                    <th class="sm-stack-col" width="267"
+                                                        style="width: 267px; min-width: 267px; max-width: 267px; font-weight: normal; text-align: left; vertical-align: top; padding: 0;">
                                                         <!--[if mso]>
                                                         <table width="267" cellpadding="0" cellspacing="0" role="presentation">
                                                         <tr>
@@ -322,8 +326,10 @@
                                                         </table>
                                                         <![endif]-->
                                                     </th>
-                                                    <th width="13" style="width: 13px; min-width: 13px; font-weight: normal;"></th>
-                                                    <th class="sm-stack-col" width="267" style="width: 267px; min-width: 267px; max-width: 267px; font-weight: normal; text-align: left; vertical-align: top; padding: 0;">
+                                                    <th width="13"
+                                                        style="width: 13px; min-width: 13px; font-weight: normal;"></th>
+                                                    <th class="sm-stack-col" width="267"
+                                                        style="width: 267px; min-width: 267px; max-width: 267px; font-weight: normal; text-align: left; vertical-align: top; padding: 0;">
                                                         <!--[if mso]>
                                                         <table width="267" cellpadding="0" cellspacing="0" role="presentation">
                                                         <tr>
@@ -381,7 +387,8 @@
                                             <!-- Row 2 -->
                                             <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
-                                                    <th class="sm-stack-col" width="267" style="width: 267px; min-width: 267px; max-width: 267px; font-weight: normal; text-align: left; vertical-align: top; padding: 0;">
+                                                    <th class="sm-stack-col" width="267"
+                                                        style="width: 267px; min-width: 267px; max-width: 267px; font-weight: normal; text-align: left; vertical-align: top; padding: 0;">
                                                         <!--[if mso]>
                                                         <table width="267" cellpadding="0" cellspacing="0" role="presentation">
                                                         <tr>
@@ -433,8 +440,10 @@
                                                         </table>
                                                         <![endif]-->
                                                     </th>
-                                                    <th width="13" style="width: 13px; min-width: 13px; font-weight: normal;"></th>
-                                                    <th class="sm-stack-col sm-last-col" width="267" style="width: 267px; min-width: 267px; max-width: 267px; font-weight: normal; text-align: left; vertical-align: top; padding: 0;">
+                                                    <th width="13"
+                                                        style="width: 13px; min-width: 13px; font-weight: normal;"></th>
+                                                    <th class="sm-stack-col sm-last-col" width="267"
+                                                        style="width: 267px; min-width: 267px; max-width: 267px; font-weight: normal; text-align: left; vertical-align: top; padding: 0;">
                                                         <!--[if mso]>
                                                         <table width="267" cellpadding="0" cellspacing="0" role="presentation">
                                                         <tr>
@@ -516,10 +525,10 @@
                                                             </tr>
                                                         </table>
                                                         <table cellpadding="0" cellspacing="0" role="presentation"
-                                                            style="margin-bottom: 4px;">
+                                                            style="margin-bottom: 0;">
                                                             <tr>
                                                                 <td style="padding-right: 6px; vertical-align: top;">
-                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/shield.png"
+                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/shield-check-green.png"
                                                                         alt="Icon" width="12" height="12"
                                                                         style="display: block; margin-top: 3px;" />
                                                                 </td>
@@ -532,22 +541,68 @@
                                                                 </td>
                                                             </tr>
                                                         </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- We're here to help Section -->
+                                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
+                                                style="margin-top: 24px;">
+                                                <tr>
+                                                    <td style="padding-bottom: 12px;">
+                                                        <p
+                                                            style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 16px; line-height: 24px; font-weight: 600;">
+                                                            We're here to help!
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-bottom: 8px;">
+                                                        <p
+                                                            style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 14px; line-height: 20px; font-weight: 400;">
+                                                            Have questions? Our onboarding specialists are standing by
+                                                            to assist you.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
                                                         <table cellpadding="0" cellspacing="0" role="presentation">
                                                             <tr>
-                                                                <td style="padding-right: 6px; vertical-align: top;">
-                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/help.png"
-                                                                        alt="Icon" width="12" height="12"
-                                                                        style="display: block; margin-top: 3px;" />
+                                                                <td style="padding-right: 6px; vertical-align: middle;">
+                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/mail.png"
+                                                                        alt="Mail" width="12" height="12"
+                                                                        style="display: block;" />
                                                                 </td>
-                                                                <td>
+                                                                <td style="vertical-align: middle;">
                                                                     <p
-                                                                        style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #025024; font-size: 11px; line-height: 18px; font-weight: 400;">
-                                                                        If you need help or have questions, just reply
-                                                                        to this email.
+                                                                        style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 14px; line-height: 20px; font-weight: 400;">
+                                                                        Email us:
+                                                                        <a href="mailto:support@valura.ai"
+                                                                            style="color: #05a049; text-decoration: none; font-weight: 600;">
+                                                                            support@valura.ai
+                                                                        </a>
                                                                     </p>
                                                                 </td>
                                                             </tr>
                                                         </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- Best Regards Section -->
+                                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
+                                                style="margin-top: 24px;">
+                                                <tr>
+                                                    <td>
+                                                        <p
+                                                            style="margin: 0 0 4px 0; font-family: 'Open Sans', Arial, sans-serif; color: #05A049; font-size: 14px; line-height: 20px; font-weight: 400;">
+                                                            Best regards,
+                                                        </p>
+                                                        <p
+                                                            style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #05A049; font-size: 14px; line-height: 20px; font-weight: 600;">
+                                                            The Valura Team
+                                                        </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -619,7 +674,8 @@
                                                                     </a>
                                                                 </td>
                                                                 <td style="vertical-align: middle; padding: 0 4px;">
-                                                                    <a href="https://facebook.com/valura.ai">
+                                                                    <a
+                                                                        href="https://www.facebook.com/people/Valuraai/61579264208725/">
                                                                         <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/11.png"
                                                                             alt="Facebook" width="12" height="12"
                                                                             style="display: block;" />
@@ -629,33 +685,81 @@
                                                         </table>
                                                     </td>
                                                     <td style="text-align: right; vertical-align: middle;">
-                                                        <a href="https://play.google.com/store/apps/details?id=ai.valura.invester"
-                                                            style="text-decoration: none;">
-                                                            <table cellpadding="0" cellspacing="0" role="presentation"
-                                                                style="background-color: #ffffff; border-radius: 20px; display: inline-table;">
-                                                                <tr>
-                                                                    <td>
-                                                                        <table cellpadding="0" cellspacing="0"
-                                                                            role="presentation">
-                                                                            <tr>
-                                                                                <td
-                                                                                    style="padding-right: 4px; vertical-align: middle;">
-                                                                                    <a href="https://play.google.com/store/apps/details?id=ai.valura.invester"
-                                                                                        style="display: flex; text-decoration: none; background-color: #ffffff; border-radius: 500px; padding: 4px 8px; vertical-align: middle; gap: 2px;">
-                                                                                        <span
-                                                                                            style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 600; color: rgba(1, 49, 77, 0.6); line-height: normal; vertical-align: middle;">Download
-                                                                                            App</span>
-                                                                                        <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/12.png"
-                                                                                            alt="Download"
-                                                                                            style="display: flex; border: 0; vertical-align: middle; margin-left: 2px; width: 10px; height: 10px;" />
-                                                                                    </a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </a>
+                                                        <table cellpadding="0" cellspacing="0" role="presentation"
+                                                            style="display: inline-table;">
+                                                            <tr>
+                                                                <!-- Play Store Button -->
+                                                                <td style="padding-right: 4px; vertical-align: middle;">
+                                                                    <table cellpadding="0" cellspacing="0"
+                                                                        role="presentation"
+                                                                        style="border-radius: 500px;">
+
+                                                                        <tr>
+
+                                                                            <td bgcolor="#ffffff"
+                                                                                style="padding: 4px 8px; border-radius: 500px; background-color: #ffffff;">
+                                                                                <a href="https://play.google.com/store/apps/details?id=ai.valura.invester"
+                                                                                    style="text-decoration: none; display: block;">
+                                                                                    <table cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation">
+                                                                                        <tr>
+                                                                                            <td
+                                                                                                style="padding-right: 2px; vertical-align: middle;">
+                                                                                                <span
+                                                                                                    style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 600; color: rgba(1, 49, 77, 0.6); line-height: normal; white-space: nowrap;">Play
+                                                                                                    Store</span>
+                                                                                            </td>
+                                                                                            <td
+                                                                                                style="vertical-align: middle;">
+                                                                                                <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/12.png"
+                                                                                                    alt="Download"
+                                                                                                    style="display: block; border: 0; width: 10px; height: 10px;" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <!-- App Store Button -->
+                                                                <td style="vertical-align: middle;">
+                                                                    <table cellpadding="0" cellspacing="0"
+                                                                        role="presentation"
+                                                                        style="border-radius: 500px;">
+
+                                                                        <tr>
+
+                                                                            <td bgcolor="#ffffff"
+                                                                                style="padding: 4px 8px; border-radius: 500px; background-color: #ffffff;">
+                                                                                <a href="https://apps.apple.com/in/app/valura-ai/id6752678259"
+                                                                                    style="text-decoration: none; display: block;">
+                                                                                    <table cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation">
+                                                                                        <tr>
+                                                                                            <td
+                                                                                                style="padding-right: 2px; vertical-align: middle;">
+                                                                                                <span
+                                                                                                    style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 600; color: rgba(1, 49, 77, 0.6); line-height: normal; white-space: nowrap;">App
+                                                                                                    Store</span>
+                                                                                            </td>
+                                                                                            <td
+                                                                                                style="vertical-align: middle;">
+                                                                                                <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/12.png"
+                                                                                                    alt="Download"
+                                                                                                    style="display: block; border: 0; width: 10px; height: 10px;" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </td>
                                                 </tr>
                                             </table>
