@@ -8,7 +8,7 @@
     <meta name="x-apple-disable-message-reformatting" />
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
-    <title>Deposit Successful - Valura</title>
+    <title>Withdrawal Pending - Valura</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
@@ -138,7 +138,7 @@
                         <!-- Brand Logo Section -->
                         <tr>
                             <td align="center" style="padding: 40px 24px 20px 24px; background-color: #f4f7f6;">
-                                <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/1.png"
+                                <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/valura-logo.png"
                                     alt="Valura.ai Logo" width="120"
                                     style="display: block; width: 120px; max-width: 120px; height: auto; margin: 0 auto;" />
                             </td>
@@ -157,7 +157,7 @@
                                     <tr>
                                         <td style="padding: 24px;">
 
-                                            <!-- Header with Shield Icon -->
+                                            <!-- Header with Hourglass Icon -->
                                             <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
                                                     <td align="center" style="padding-bottom: 12px;">
@@ -165,14 +165,14 @@
                                                             <tr>
                                                                 <td
                                                                     style="padding-right: 12px; vertical-align: middle;">
-                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/shield-check.png"
-                                                                        alt="Success" width="24" height="24"
+                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/hourglass.png"
+                                                                        alt="Pending" width="24" height="24"
                                                                         style="display: block; width: 24px; height: 24px;" />
                                                                 </td>
                                                                 <td style="vertical-align: middle;">
                                                                     <h1
                                                                         style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 20px; line-height: 28px; font-weight: 600;">
-                                                                        Deposit Successful
+                                                                        Withdrawal Pending
                                                                     </h1>
                                                                 </td>
                                                             </tr>
@@ -191,10 +191,8 @@
                                                         </p>
                                                         <p
                                                             style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 12px; line-height: 16px; font-weight: 400;">
-                                                            Your deposit of <span
-                                                                style="color: #05a049; font-weight: 700;">$${depositAmount}
-                                                                ${depositCurrency}</span> has been successfully added to
-                                                            your account.
+                                                            Thank you for initiating your withdrawal. We've successfully
+                                                            received your request and the processing has begun.
                                                         </p>
                                                     </td>
                                                 </tr>
@@ -229,18 +227,55 @@
                                                                         <tr>
                                                                             <td
                                                                                 style="padding: 16px; text-align: center;">
-                                                                                <p
-                                                                                    style="margin: 0 0 4px 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 12px; line-height: 16px; font-weight: 600;">
-                                                                                    ${bank} → Valura Wallet
-                                                                                </p>
+                                                                                <table cellpadding="0" cellspacing="0"
+                                                                                    role="presentation"
+                                                                                    style="margin: 0 auto 4px auto;">
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="padding-right: 4px; vertical-align: middle;">
+                                                                                            <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/landmark.png"
+                                                                                                alt="Bank" width="12"
+                                                                                                height="12"
+                                                                                                style="display: block; width: 12px; height: 12px;" />
+                                                                                        </td>
+                                                                                        <td
+                                                                                            style="vertical-align: middle;">
+                                                                                            <p
+                                                                                                style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 12px; line-height: 16px; font-weight: 600;">
+                                                                                                ${bank}
+                                                                                            </p>
+                                                                                        </td>
+                                                                                        <td
+                                                                                            style="padding: 0 6px; vertical-align: middle;">
+                                                                                            <p
+                                                                                                style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 12px; line-height: 16px; font-weight: 600;">
+                                                                                                →
+                                                                                            </p>
+                                                                                        </td>
+                                                                                        <td
+                                                                                            style="vertical-align: middle;">
+                                                                                            <p
+                                                                                                style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 12px; line-height: 16px; font-weight: 600;">
+                                                                                                Valura Wallet
+                                                                                            </p>
+                                                                                        </td>
+                                                                                        <td
+                                                                                            style="padding-left: 4px; vertical-align: middle;">
+                                                                                            <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/wallet.png"
+                                                                                                alt="Wallet" width="12"
+                                                                                                height="12"
+                                                                                                style="display: block; width: 12px; height: 12px;" />
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
                                                                                 <table cellpadding="0" cellspacing="0"
                                                                                     role="presentation"
                                                                                     style="margin: 0 auto;">
                                                                                     <tr>
                                                                                         <td
                                                                                             style="padding-right: 4px; vertical-align: middle;">
-                                                                                            <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/shield-check.png"
-                                                                                                alt="Success" width="12"
+                                                                                            <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/clock.png"
+                                                                                                alt="Clock" width="12"
                                                                                                 height="12"
                                                                                                 style="display: block; width: 12px; height: 12px;" />
                                                                                         </td>
@@ -248,8 +283,8 @@
                                                                                             style="vertical-align: middle;">
                                                                                             <p
                                                                                                 style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 10px; line-height: 14px; font-weight: 400;">
-                                                                                                Deposit Completed
-                                                                                                Successfully
+                                                                                                Withdrawal request
+                                                                                                received – processing
                                                                                             </p>
                                                                                         </td>
                                                                                     </tr>
@@ -273,24 +308,24 @@
                                                                                 style="vertical-align: top;">
                                                                                 <p
                                                                                     style="margin: 0 0 4px 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 8px; line-height: 11px; font-weight: 400;">
-                                                                                    Amount Sent
+                                                                                    Amount Requested
                                                                                 </p>
                                                                                 <p
                                                                                     style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 14px; line-height: 19px; font-weight: 600;">
-                                                                                    $${depositAmount} <span
-                                                                                        style="color: #00111b; font-size: 10px;">${depositCurrency}</span>
+                                                                                    ${withdrawalAmount} <span
+                                                                                        style="color: #00111b; font-size: 10px;">${withdrawalCurrency}</span>
                                                                                 </p>
                                                                             </td>
                                                                             <td width="50%"
                                                                                 style="vertical-align: top; text-align: right;">
                                                                                 <p
                                                                                     style="margin: 0 0 4px 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 8px; line-height: 11px; font-weight: 400;">
-                                                                                    Amount Received
+                                                                                    Est. Amount to be deposited
                                                                                 </p>
                                                                                 <p
                                                                                     style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 14px; line-height: 19px; font-weight: 600;">
-                                                                                    $${depositAmount} <span
-                                                                                        style="color: #00111b; font-size: 10px;">${depositCurrency}</span>
+                                                                                    ${withdrawalAmount} <span
+                                                                                        style="color: #00111b; font-size: 10px;">${withdrawalCurrency}</span>
                                                                                 </p>
                                                                             </td>
                                                                         </tr>
@@ -445,8 +480,8 @@
                                                                         role="presentation">
                                                                         <tr>
                                                                             <td width="50%"
-                                                                                style="padding-right: 12px; vertical-align: top;">
-                                                                                <a href="mailto:?subject=Deposit%20Successful%20-%20Valura&body=Hi%2C%0A%0AI%20wanted%20to%20share%20my%20successful%20deposit%20transaction%20with%20you.%0A%0AAmount%3A%20%241%2C000%20USD%0APayment%20Method%3A%20Bank%20Transfer%0ADate%20%26%20Time%3A%20Nov%2022%2C%202025%2C%201%3A34%20PM%0AReference%20Number%3A%20REF%E2%80%93DPT%E2%80%93123456%0A%0AThank%20you%2C%0AValura%20Payments"
+                                                                                style="padding-right: 6px; vertical-align: top;">
+                                                                                <a href="mailto:?subject=Withdrawal%20Pending%20-%20Valura&body=Hi%2C%0A%0AI%20wanted%20to%20share%20my%20withdrawal%20transaction%20status%20with%20you.%0A%0AStatus%3A%20Withdrawal%20Pending%0AAmount%3A%20${withdrawalCurrency}%20${withdrawalAmount}%0APayment%20Method%3A%20Bank%20Transfer%0ADate%20%26%20Time%3A%20${transactionDate.replace(/ /g, '%20').replace(/,/g, '%2C')}%0AReference%20Number%3A%20${refNumber}%0A%0AYour%20withdrawal%20is%20being%20processed%20and%20will%20be%20completed%20soon.%0A%0AThank%20you%2C%0AValura%20Payments"
                                                                                     style="text-decoration: none; display: block;">
                                                                                     <table width="100%" cellpadding="0"
                                                                                         cellspacing="0"
@@ -471,7 +506,7 @@
                                                                                                         <td
                                                                                                             style="vertical-align: middle;">
                                                                                                             <span
-                                                                                                                style="font-family: 'Open Sans', Arial, sans-serif; font-size: 10px; font-weight: 600; color: #05a049; line-height: normal;">Share</span>
+                                                                                                                style="font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 10px; line-height: 14px; font-weight: 600; text-decoration: none;">Share</span>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
@@ -481,7 +516,7 @@
                                                                                 </a>
                                                                             </td>
                                                                             <td width="50%"
-                                                                                style="padding-left: 12px; vertical-align: top;">
+                                                                                style="padding-left: 6px; vertical-align: top;">
                                                                                 <a href="https://app.valura.ai"
                                                                                     style="text-decoration: none; display: block;">
                                                                                     <table width="100%" cellpadding="0"
@@ -499,7 +534,7 @@
                                                                                                         <td
                                                                                                             style="padding-right: 4px; vertical-align: middle;">
                                                                                                             <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/eye.png"
-                                                                                                                alt="Download"
+                                                                                                                alt="View"
                                                                                                                 width="12"
                                                                                                                 height="12"
                                                                                                                 style="display: block; width: 12px; height: 12px;" />
@@ -507,7 +542,8 @@
                                                                                                         <td
                                                                                                             style="vertical-align: middle;">
                                                                                                             <span
-                                                                                                                style="font-family: 'Open Sans', Arial, sans-serif; font-size: 10px; font-weight: 600; color: #fffffc; line-height: normal;">Receipt</span>
+                                                                                                                style="font-family: 'Open Sans', Arial, sans-serif; color: #fffffc; font-size: 10px; line-height: 14px; font-weight: 600; text-decoration: none;">View
+                                                                                                                Receipt</span>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
@@ -522,7 +558,7 @@
                                                             </tr>
                                                         </table>
 
-                                                        <!-- Completion Notice -->
+                                                        <!-- Processing Notice -->
                                                         <table width="100%" cellpadding="0" cellspacing="0"
                                                             role="presentation">
                                                             <tr>
@@ -532,15 +568,15 @@
                                                                         <tr>
                                                                             <td
                                                                                 style="padding-right: 4px; vertical-align: middle;">
-                                                                                <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/banknote-arrow-up.png"
-                                                                                    alt="Success" width="12" height="12"
+                                                                                <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/clock.png"
+                                                                                    alt="Clock" width="12" height="12"
                                                                                     style="display: block; width: 12px; height: 12px;" />
                                                                             </td>
                                                                             <td style="vertical-align: middle;">
                                                                                 <p
                                                                                     style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #025024; font-size: 10px; line-height: 12px; font-weight: 400;">
-                                                                                    Your deposit has been successfully
-                                                                                    added to your account balance.
+                                                                                    We'll notify you once the
+                                                                                    transaction is confirmed
                                                                                 </p>
                                                                             </td>
                                                                         </tr>
@@ -552,17 +588,17 @@
                                                 </tr>
                                             </table>
 
-                                            <!-- What's Next Section -->
+                                            <!-- What's Happening Section -->
                                             <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
-                                                    <td style="padding-bottom: 24px;">
+                                                    <td style="padding-top: 24px; padding-bottom: 24px;">
                                                         <table width="100%" cellpadding="0" cellspacing="0"
                                                             role="presentation"
                                                             style="background-color: #05a049; border: 2px solid #9bd9b6; border-radius: 24px;">
                                                             <tr>
                                                                 <td style="padding: 16px;">
                                                                     <table cellpadding="0" cellspacing="0"
-                                                                        role="presentation" style="margin-bottom: 4px;">
+                                                                        role="presentation" style="margin-bottom: 8px;">
                                                                         <tr>
                                                                             <td
                                                                                 style="padding-right: 6px; vertical-align: middle;">
@@ -574,7 +610,7 @@
                                                                             <td style="vertical-align: middle;">
                                                                                 <p
                                                                                     style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #fffffc; font-size: 16px; line-height: 22px; font-weight: 600;">
-                                                                                    What's next?
+                                                                                    What's Happening Now?
                                                                                 </p>
                                                                             </td>
                                                                         </tr>
@@ -585,13 +621,13 @@
                                                                             <td>
                                                                                 <p
                                                                                     style="margin: 0 0 4px 0; font-family: 'Open Sans', Arial, sans-serif; color: #fffffc; font-size: 12px; line-height: 16px; font-weight: 400;">
-                                                                                    • Your updated balance is now
-                                                                                    visible on your dashboard.
+                                                                                    • Your request is being processed by
+                                                                                    our payment partners.
                                                                                 </p>
                                                                                 <p
                                                                                     style="margin: 0 0 4px 0; font-family: 'Open Sans', Arial, sans-serif; color: #fffffc; font-size: 12px; line-height: 16px; font-weight: 400;">
-                                                                                    • You can start allocating this
-                                                                                    amount towards your financial goals.
+                                                                                    • This may take some time depending
+                                                                                    on your bank's response.
                                                                                 </p>
                                                                                 <p
                                                                                     style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #fffffc; font-size: 12px; line-height: 16px; font-weight: 400;">
@@ -608,36 +644,78 @@
                                                 </tr>
                                             </table>
 
-                                            <!-- Unauthorized Transfer Warning -->
+                                            <!-- Security & Warning Notices -->
                                             <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
-                                                    <td style="padding-bottom: 24px;">
-                                                        <p
-                                                            style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 12px; line-height: 16px; font-weight: 400;">
-                                                            If you didn't authorize this transfer or notice anything
-                                                            unusual, contact our support team immediately at
-                                                            support@valura.ai.
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
-                                            <!-- Security Notice -->
-                                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                                                <tr>
-                                                    <td style="padding-bottom: 24px;">
+                                                    <td style="padding-bottom: 12px;">
                                                         <table cellpadding="0" cellspacing="0" role="presentation">
                                                             <tr>
                                                                 <td style="padding-right: 4px; vertical-align: middle;">
-                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/shield-check.png"
-                                                                        alt="Shield" width="13" height="13"
-                                                                        style="display: block; width: 13px; height: 13px;" />
+                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/shield-check-green.png"
+                                                                        alt="Shield" width="12" height="12"
+                                                                        style="display: block; width: 12px; height: 12px;" />
                                                                 </td>
                                                                 <td style="vertical-align: middle;">
                                                                     <p
                                                                         style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #025024; font-size: 10px; line-height: 12px; font-weight: 400;">
                                                                         Your information is secure and processed as per
                                                                         regulatory standards.
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-bottom: 24px;">
+                                                        <table cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tr>
+                                                                <td style="padding-right: 4px; vertical-align: middle;">
+                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/alert-triangle.png"
+                                                                        alt="Alert" width="12" height="12"
+                                                                        style="display: block; width: 12px; height: 12px;" />
+                                                                </td>
+                                                                <td style="vertical-align: middle;">
+                                                                    <p
+                                                                        style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #025024; font-size: 10px; line-height: 12px; font-weight: 400;">
+                                                                        If you didn't authorize this transfer or notice
+                                                                        anything unusual, contact our support team
+                                                                        immediately.
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- We're here to help -->
+                                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                                <tr>
+                                                    <td style="padding-bottom: 24px;">
+                                                        <table cellpadding="0" cellspacing="0" role="presentation"
+                                                            style="margin-bottom: 8px;">
+                                                            <tr>
+                                                                <td style="padding-right: 6px; vertical-align: middle;">
+                                                                    <p
+                                                                        style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 12px; line-height: 16px; font-weight: 600;">
+                                                                        We're here to help!
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tr>
+                                                                <td style="padding-right: 4px; vertical-align: middle;">
+                                                                    <img src="https://valura-email.s3.ap-south-1.amazonaws.com/images/mail.png"
+                                                                        alt="Email" width="12" height="12"
+                                                                        style="display: block; width: 12px; height: 12px;" />
+                                                                </td>
+                                                                <td style="vertical-align: middle;">
+                                                                    <p
+                                                                        style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 10px; line-height: 14px; font-weight: 400;">
+                                                                        Email us: <a href="mailto:support@valura.ai"
+                                                                            style="color: #05a049; text-decoration: none;">support@valura.ai</a>
                                                                     </p>
                                                                 </td>
                                                             </tr>
@@ -651,12 +729,12 @@
                                                 <tr>
                                                     <td>
                                                         <p
-                                                            style="margin: 0 0 4px 0; font-family: 'Open Sans', Arial, sans-serif; color: #00111b; font-size: 12px; line-height: 16px; font-weight: 400;">
-                                                            Thank you for using Valura.
+                                                            style="margin: 0 0 4px 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 12px; line-height: 16px; font-weight: 600;">
+                                                            Best regards,
                                                         </p>
                                                         <p
                                                             style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #05a049; font-size: 12px; line-height: 16px; font-weight: 600;">
-                                                            Valura Payments
+                                                            The Valura Team
                                                         </p>
                                                     </td>
                                                 </tr>
@@ -673,16 +751,16 @@
                             </td>
                         </tr>
 
-                        <!-- Footer Section -->
+                        <!-- Footer -->
                         <tr>
-                            <td align="center"
-                                style="background-color: #05a049; padding: 32px 40px; background-image: url('https://valura-email.s3.ap-south-1.amazonaws.com/images/design-onboard.png'); background-position: bottom center; background-size: 100% auto; background-repeat: no-repeat;">
+                            <td align="center" bgcolor="#05A049"
+                                style="padding: 0; background: linear-gradient(145deg, #05A049 10%, #79e29f8c 90%); background-color: #05A049; position: relative;padding: 30px 20px; border-radius: 24px 24px 0 0;">
                                 <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
                                     style="max-width: 520px;">
 
                                     <!-- Social Media & Download -->
                                     <tr>
-                                        <td style="padding-bottom: 8px;">
+                                        <td style="padding-bottom: 16px;">
                                             <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
                                                     <td style="vertical-align: middle;">
@@ -690,7 +768,7 @@
                                                             <tr>
                                                                 <td style="padding-right: 8px; vertical-align: middle;">
                                                                     <p
-                                                                        style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; font-size: 12px; color: #fffffc;">
+                                                                        style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; color: #fffffc;">
                                                                         Join us
                                                                     </p>
                                                                 </td>
@@ -823,12 +901,12 @@
                                                 <tr>
                                                     <td>
                                                         <p
-                                                            style="margin: 0 0 4px 0; font-family: 'Open Sans', Arial, sans-serif; font-size: 10px; color: #fffffc;">
+                                                            style="margin: 0 0 8px 0; font-family: 'Open Sans', Arial, sans-serif; font-size: 10px; color: #fffffc;">
                                                             Thank you for waiting with us.
                                                         </p>
                                                         <p
                                                             style="margin: 0; font-family: 'Open Sans', Arial, sans-serif; font-size: 8px; color: #fffffc;">
-                                                            © 2025 Valura.ai
+                                                            © 2026 Valura.ai
                                                         </p>
                                                     </td>
                                                 </tr>
